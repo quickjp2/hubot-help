@@ -1,4 +1,4 @@
-Helper = require('hubot-test-helper')
+Helper = require 'hubot-test-helper'
 chai = require 'chai'
 nock = require 'nock'
 sinon = require 'sinon'
