@@ -1,8 +1,5 @@
 Helper = require 'hubot-test-helper'
 chai = require 'chai'
-nock = require 'nock'
-sinon = require 'sinon'
-chai.use require 'sinon-chai'
 
 expect = chai.expect
 
@@ -11,8 +8,6 @@ helper = new Helper('../src/help.coffee')
 describe 'help', ->
   beforeEach ->
     @room = helper.createRoom()
-    @robot =
-      respond: sinon.spy()
   afterEach ->
     @room.destroy()
 
